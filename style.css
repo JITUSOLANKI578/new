@@ -1,0 +1,290 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #444;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('path-to-your-burger-icon.png');
+}
+
+/* Hero Section Styles */
+.hero-section {
+    background: url('path-to-your-background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.hero-section h1 {
+    animation: fadeInLeft 1.5s ease-in-out;
+}
+
+.hero-section .btn-primary {
+    animation: fadeInUp 1.5s ease-in-out;
+    border-radius: 25px; /* Rounded corners for buttons */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* About Section Styles */
+.about-section {
+    padding: 60px 0;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+}
+
+.card {
+    border: none;
+    border-radius: 10px; /* Rounded corners for cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Card shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Services Section Styles */
+.services-section {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body i {
+    color: #007bff; /* Icon color */
+}
+
+.card-title {
+    margin-top: 10px;
+}
+
+/* Jobs Section Styles */
+.jobs-section {
+    padding: 60px 0;
+    background: #e9ecef;
+}
+
+.jobs-section .card {
+    border-radius: 10px; /* Rounded corners for job cards */
+    overflow: hidden;
+}
+
+.jobs-section .card-body {
+    padding: 30px;
+}
+
+.jobs-section .btn-primary {
+    border-radius: 25px; /* Rounded corners for buttons */
+}
+
+/* Contact Section Styles */
+.contact-section {
+    padding: 60px 0;
+    background: #ffffff;
+    text-align: center;
+}
+
+.contact-section p {
+    margin: 10px 0;
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px 0;
+    background: #343a40;
+    color: #fff;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .hero-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-section img {
+        max-width: 70%;
+    }
+}
+
+/* CSS Grid */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap:20px;
+
+}
+
+.col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+/* CSS Flexbox */
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+/* CSS Transitions */
+.card, .btn-primary {
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* CSS Animations */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.animated-bounce {
+    animation: bounce 1s infinite;
+}
+
+/* CSS Variables */
+:root {
+    --main-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+}
+
+/* CSS Box Sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* CSS Media Queries */
+@media (min-width: 768px) {
+    .container {
+        padding: 0 30px;
+    }
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+.rr{
+    color:black;
+    font-weight: 900;
+}
+.a{ margin-top: 100px;
+    color: black;
+    font-weight:600;    
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);    
+}
+   
