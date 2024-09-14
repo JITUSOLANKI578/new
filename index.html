@@ -1,189 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apex Finance & Telecalling Company provides innovative financial solutions and telecalling excellence. Discover our services and client success stories.">
+    <meta name="keywords" content="Finance, Telecalling, Financial Solutions, Customer Support, Innovation, Client Success">
+    <meta name="author" content="Apex Finance & Telecalling Company">
+    <title>Apex Finance & Telecalling Company - Home</title>
+    <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Hero Section Styles */
+        .hero-section {
+            position: relative;
+            overflow: hidden;
+            height: 100vh;
+            background: url('logo2.png') no-repeat center center/cover;
+            background-size: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Apex and Finance Telecalling Company provides expert telecalling services and job opportunities for freshers and experienced professionals. Discover your next career move with us.">
-    <meta name="keywords" content="telecalling jobs, telecalling services, freshers jobs, job opportunities, lead generation jobs, customer support jobs, telecalling careers">
-    <meta name="robots" content="index, follow">
+        .hero-section .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
 
-    <!-- Open Graph Meta Tags for Social Media Sharing -->
-    <meta property="og:title" content="Apex and Finance Telecalling Company">
-    <meta property="og:description" content="Offering top telecalling services and job opportunities. Apply for telecalling, lead generation, and customer support roles.">
-    <meta property="og:image" content="logo2.png">
-    <meta property="og:url" content="https://apexjobs.netlify.app">
-    <meta property="og:type" content="website">
+        .hero-section .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 0 1rem;
+        }
 
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Apex and Finance Telecalling Company">
-    <meta name="twitter:description" content="Explore job opportunities and telecalling services with Apex and Finance. Freshers and experienced professionals are welcome.">
-    <meta name="twitter:image" content="logo2.png">
+        .hero-section h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
 
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Apex and Finance Telecalling Company",
-        "url": "https://apexjobs.netlify.app",
-        "logo": "logo2.png",
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+919351406809",
-            "contactType": "Customer Service"
-        },
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "123, Main St",
-            "addressLocality": "Anytown",
-            "addressRegion": "India",
-            "postalCode": "12345"
-        },
-        "description": "Apex and Finance provides expert telecalling services and career opportunities for freshers and experienced professionals."
+        .hero-section p {
+            font-size: 1.25rem;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        .hero-section a.btn {
+            animation: fadeInUp 2.5s ease-in-out;
+        }
+
+        /* Keyframes for animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Section Styles */
+        .section-padding {
+            padding: 5rem 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .section-title p {
+            font-size: 1.125rem;
+            color: #6c757d;
+        }
+
+        /* Testimonials Section */
+        .testimonials-section {
+            background: #e9ecef;
+            padding: 5rem 1rem;
+        }
+
+        .testimonial-card {
+            border: none;
+            border-radius: 10px;
+            background: #fff;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .testimonial-card .quote {
+            font-size: 1.5rem;
+            color: #343a40;
+        }
+
+        .testimonial-card .author {
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        .whatsapp-icon {
+      position: fixed;
+      width: 50px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      border-radius: 50%;
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      z-index: 9999;
+      transition: background-color 0.3s ease;
     }
-    </script>
-<style>
-   
-    /* Bottom Navigation Bar Styles */
+        /* Footer Styles */
+        .footer {
+            background: #343a40;
+            color: #fff;
+            padding: 2rem 1rem;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .footer ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .footer ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-section p {
+                font-size: 1rem;
+            }
+
+            .navbar-brand span {
+                font-size: 0.9rem;
+            }
+
+            .hero-section {
+                height: 50vh;
+                background: url('logo2.png') no-repeat center top;
+                background-size: cover;
+            }
+        }
+       
+
+        
+        .ji {
+            margin-top: -150px;
+        }
+        .footer {
+    background: #343a40;
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.footer {
+    z-index: 1;
+}
 @media (max-width: 768px) {
-    .navbar {
-        z-index: 1030; /* Ensure it stays above other content */
-    }
-    .navbar-nav .nav-link {
-        font-size: 0.9rem; /* Adjust font size for mobile */
+    .footer {
+        padding: 1rem;
+        font-size: 0.875rem;
     }
 }
 
-</style>
-    <title>Apex and Finance Telecalling Company - Jobs and Telecalling Services</title>
-    <!-- Link to Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Link to Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Link to Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
+.whatsapp-icon {
+    z-index: 1000;
+}
+
+    </style>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">APEX FINANCE & TELLE CALLING COMPANY</a>
+        <a class="navbar-brand" href="#">
+            <span class="ml-2">APEX FINANCE & TELECALLING COMPANY</span>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About Us</a>
+                    <a class="nav-link" href="services.html">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
+                    <a class="nav-link" href="career.html">Career</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#jobs">Jobs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://surveyheart.com/form/66dc45191e6bd00681369a2f">Contact Us</a>
+                    <a class="nav-link" href="about.html">About Us</a>
                 </li>
             </ul>
         </div>
     </nav>
+
     <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <img src="logo2.png" alt="Tellecalling Company Logo" class="img-fluid">
-                </div>
-                <div class="col-md-6">
-                    <h1 class="animated fadeInLeft">Welcome to Apex and Finance Telecalling Company</h1>
-                    <p class="a">Company work for providing Personal loan , Education loan , Business loan , Home loan and credit card from bank in short process</p>
-                </div>
-               
-            </div>
-        </div>
-    </section>
-
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2 class="text-center">About Us</h2>
-            <p class="text-center">At Apex and Finance, we are committed to providing exceptional telecalling services and helping job seekers find the right opportunities. Our team of professionals is dedicated to delivering results that exceed expectations.</p>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Mission</h5>
-                            <p class="card-text">To offer top-notch telecalling services and career opportunities that empower businesses and individuals.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Vision</h5>
-                            <p class="card-text">To be the leading provider of telecalling services and a trusted partner for job seekers worldwide.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Values</h5>
-                            <p class="card-text">Integrity, Quality, Innovation, and Customer Satisfaction.</p>
-                        </div>
-                    </div>
+                <div class="col-md-12 content">
+                    <h1 class="animated fadeInUp ji">Welcome to Apex Finance and Telecalling Company</h1>
+                    <a href="services.html" class="btn btn-primary btn-lg animated fadeInUp ii">Learn More</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services-section">
+    <!-- Company Highlights Section -->
+    <section id="highlights" class="section-padding">
         <div class="container">
-            <h2 class="text-center">Our Services</h2>
+            <div class="section-title">
+                <h2>Company Highlights</h2>
+                <p>Discover what sets Apex Finance & Telecalling Company apart in the industry.</p>
+            </div>
             <div class="row">
-                <div class="col-md-3">
-                    <div class="card">
+                <div class="col-md-6">
+                    <h3>Industry Expertise</h3>
+                    <p>With over a decade of experience in the telecalling industry, we have developed a deep understanding of market trends and customer behavior. Our expertise allows us to craft strategies that are both innovative and effective, ensuring our clients stay ahead of the competition.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Cutting-Edge Technology</h3>
+                    <p>We utilize state-of-the-art technology to enhance our telecalling services. From advanced CRM systems to AI-driven analytics, our tech stack is designed to deliver high-quality results and improve operational efficiency.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Global Reach</h3>
+                    <p>Our services span across various geographies, allowing us to cater to a diverse client base. Whether you are looking to penetrate new markets or strengthen your presence in existing ones, our global network provides the support you need.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Proven Track Record</h3>
+                    <p>We pride ourselves on a proven track record of success. Our case studies and client testimonials highlight our ability to deliver tangible results and drive significant business growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Success Stories Section -->
+    <section id="success-stories" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Success Stories</h2>
+                <p>Read about how we’ve helped our clients achieve their goals and overcome challenges.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card border-0">
                         <div class="card-body text-center">
-                            <i class="fas fa-phone-volume fa-3x mb-3"></i>
-                            <h5 class="card-title">Telecalling</h5>
-                            <p class="card-text">Expert telecalling services to generate leads and drive sales growth.</p>
+                            <i class="fas fa-briefcase fa-3x mb-3"></i>
+                            <h5 class="card-title">DigitalVisionSolitario</h5>
+                            <p class="card-text">digital vision solitario needed a comprehensive telecalling solution to boost their sales. Our tailored approach led to a 40% increase in sales and a significant improvement in customer engagement.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <i class="fas fa-bullhorn fa-3x mb-3"></i>
-                            <h5 class="card-title">Lead Generation</h5>
-                            <p class="card-text">Identifying and qualifying potential leads to boost your business success.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <i class="fas fa-headset fa-3x mb-3"></i>
-                            <h5 class="card-title">Customer Support</h5>
-                            <p class="card-text">Providing exceptional support to enhance customer satisfaction and loyalty.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
+                <div class="col-md-4">
+                    <div class="card border-0">
                         <div class="card-body text-center">
                             <i class="fas fa-chart-line fa-3x mb-3"></i>
-                            <h5 class="card-title">Business Growth</h5>
-                            <p class="card-text">Strategies and solutions designed to help your business grow and thrive.</p>
+                            <h5 class="card-title">ZibDigital</h5>
+                            <p class="card-text">ZibDigital sought our expertise to enhance customer retention. By implementing a comprehensive telecalling strategy and improving follow-up processes, we helped them achieve a 25% increase in customer loyalty and repeat business.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <div class="card-body text-center">
+                            <i class="fas fa-globe fa-3x mb-3"></i>
+                            <h5 class="card-title">GlobalTech</h5>
+                            <p class="card-text">GlobalTech needed assistance with expanding into new international markets. Our tailored telecalling approach facilitated their entry into three new countries, resulting in a 30% increase in international revenue.</p>
                         </div>
                     </div>
                 </div>
@@ -191,131 +320,73 @@
         </div>
     </section>
 
-    <!-- Jobs Section -->
-    <!-- Jobs Section -->
-<section id="jobs" class="jobs-section">
-    <div class="container">
-        <h2 class="text-center">Job Opportunities</h2>
-        <p class="text-center">We offer a variety of job opportunities for freshers and experienced professionals. Explore our current openings and find a role that fits your skills and career goals.</p>
-        <div class="row">
-            <!-- HR Job -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <i class="fas fa-user-cog fa-3x mb-3"></i>
-                        <h5 class="card-title">HR</h5>
-                        <p class="card-text"><strong>Company:</strong> Apex Finance & Telecalling Company</p>
-                        <p class="card-text"><strong>Job Description:</strong> Responsible for recruitment, employee relations, and performance management.</p>
-                        <p class="card-text"><strong>Age:</strong> 18+</p>
-                        <p class="card-text"><strong>Languages:</strong> Hindi & Basic English</p>
-                        <p class="card-text"><strong>Timing:</strong> Part-time</p>
-                        <p class="card-text"><strong>Salary:</strong> ₹8,000 - ₹10,000 per month</p>
-                        <p class="card-text"><strong>Additional Info:</strong> You can choose daily basis also</p>
-                        <a href="#contact" class="btn btn-primary">Apply Now</a>
-                    </div>
+    <!-- Industry Insights Section -->
+    <section id="insights" class="section-padding">
+        <div class="container">
+            <div class="section-title">
+                <h2>Industry Insights</h2>
+                <p>Stay informed about the latest trends and future outlooks in the finance and telecalling sectors.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Emerging Trends</h3>
+                    <p>The telecalling industry is evolving rapidly, with new trends shaping the way businesses interact with customers. Key trends include the rise of AI-driven customer interactions, increased use of data analytics for decision-making, and a shift towards more personalized communication approaches.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>The Future of Finance and Telecalling</h3>
+                    <p>The integration of financial technology with telecalling services is expected to enhance customer experiences and streamline operations. Future advancements in automation, data security, and predictive analytics will continue to transform the industry and offer new opportunities for businesses.</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Company Staff Job -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <i class="fas fa-user fa-3x mb-3"></i>
-                        <h5 class="card-title">Company Staff</h5>
-                        <p class="card-text"><strong>Company:</strong> Apex Finance & Telecalling Company</p>
-                        <p class="card-text"><strong>Job Description:</strong> Support various operational tasks and assist in different departments as needed.</p>
-                        <p class="card-text"><strong>Age:</strong> 18+</p>
-                        <p class="card-text"><strong>Languages:</strong> Hindi & Basic English</p>
-                        <p class="card-text"><strong>Timing:</strong> Part-time</p>
-                        <p class="card-text"><strong>Salary:</strong> ₹7,000 - ₹9,000 per month</p>
-                        <a href="#contact" class="btn btn-primary">Apply Now</a>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Clients Say</h2>
+                <p>Hear directly from our clients about their experiences working with us.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p class="quote">"Apex Finance & Telecalling Company has been instrumental in our growth. Their innovative approach and dedication to client success are unmatched."</p>
+                        <p class="author">Jane Doe, ZibDigital</p>
                     </div>
                 </div>
-            </div>
-
-            <!-- Telecaller Job -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <i class="fas fa-phone-volume fa-3x mb-3"></i>
-                        <h5 class="card-title">Telecaller</h5>
-                        <p class="card-text"><strong>Company:</strong> Apex Finance & Telecalling Company</p>
-                        <p class="card-text"><strong>Job Description:</strong> Responsible for making calls to potential clients, generating leads, and following up on sales opportunities.</p>
-                        <p class="card-text"><strong>Age:</strong> 18+</p>
-                        <p class="card-text"><strong>Languages:</strong> Hindi & Basic English</p>
-                        <p class="card-text"><strong>Timing:</strong> Part-time</p>
-                        <p class="card-text"><strong>Salary:</strong> ₹7,000 - ₹8,000 per month</p>
-                        <a href="#contact" class="btn btn-primary">Apply Now</a>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p class="quote">"Their team consistently delivers high-quality results and provides exceptional support. We couldn't be happier with their services."</p>
+                        <p class="author">John Smith, Marketing Director at DigitalVisionSolitario</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <p class="quote">"Apex Finance & Telecalling Company helped us expand our market reach significantly. Their expertise and commitment were key to our success."</p>
+                        <p class="author">Alice Johnson, VP of Sales at GlobalTech</p>
                     </div>
                 </div>
             </div>
         </div>
-        
-    
-    </div>
-</section>
+    </section>
 
-    <!-- Contact Section -->
-   <!-- Contact Section -->
-<!-- Contact Section -->
-<section id="contact" class="contact-section py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Contact Us</h2>
-        <div class="row">
-            <div class="col-md-6 mx-auto">
-                <div class="contact-info p-4 bg-light rounded shadow-sm">
-                    <p class="mb-3"><strong><i class="bi bi-geo-alt"></i> Address:</strong> 123, Main St, Anytown, USA</p>
-                    <p class="mb-3"><strong><i class="bi bi-telephone"></i> Phone:</strong> <span id="phone-number">+919351406809</span></p>
-                    <p class="mb-3"><strong><i class="bi bi-envelope"></i> Email:</strong> <a href="mailto:info@example.com" >info@example.com</a></p>
-                    <a id="get-in-touch" class="rr btn btn-primary animated fadeInUp touch" target="_blank">Get in Touch</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
+        <!-- WhatsApp Icon -->
+    <a href="https://wa.me/+919351406809" target="_blank" class="whatsapp-icon">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
 
     <!-- Footer -->
-   <!-- Footer -->
-<footer>
-    <div class="container">
-        <p>&copy; 2024 Apex and Finance Telecalling Company</p>
-   
-    </div>
-</footer>
+    <footer class="footer py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Apex Finance & Telecalling Company. All rights reserved.</p>
+        </div>
+    </footer>
 
-
-    <!-- Scripts -->
-    <script>
-      const phoneNumbers = ['+919351406809', '+917073829447', '+919801733912'];
-
-// Function to update phone number and WhatsApp link
-function updatePhoneNumber() {
-  const phoneNumber = phoneNumbers[Math.floor(Math.random() * phoneNumbers.length)];
-  
-  // Ensure elements exist before updating
-  const phoneNumberElement = document.getElementById('phone-number');
-  const getInTouchElement = document.getElementById('get-in-touch');
-  
-  if (phoneNumberElement && getInTouchElement) {
-    // phoneNumberElement.innerText = phoneNumber;
-    getInTouchElement.href = `https://wa.me/${phoneNumber}`;
-    getInTouchElement.target = '_blank'; // Add this to open in new tab
-  } else {
-    console.error("Elements not found in the DOM.");
-  }
-}
-
-// Update phone number every second
-setInterval(updatePhoneNumber, 1000);
-
-      </script>
-      
+    <!-- Link to Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
 </body>
+
 </html>

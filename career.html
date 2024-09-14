@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Explore career opportunities with Apex and Finance Telecalling Company. Find current job openings and apply to join our team.">
+    <meta name="keywords" content="careers, job openings, Apex and Finance, telecalling jobs, career opportunities">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Careers - Apex and Finance Telecalling Company">
+    <meta property="og:description" content="Discover job opportunities at Apex and Finance. We are hiring for various positions. Learn more about our current openings and apply today.">
+    <meta property="og:image" content="logo2.png">
+    <meta property="og:url" content="https://apexjobs.netlify.app/careers">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Careers - Apex and Finance Telecalling Company">
+    <meta name="twitter:description" content="Explore exciting career opportunities at Apex and Finance. View current job openings and apply to be part of our dynamic team.">
+    <meta name="twitter:image" content="logo2.png">
+
+    <title>Apex and Finance Telecalling Company</title>
+    <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
+
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link to Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to Custom CSS -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+     <style>/* style.css */
+        .navbar{
+            position: fixed;
+            z-index: 1000;
+            width: 100%;
+        }
+        /* Make sure job cards are responsive */
+        .card {
+            border: none; /* Removes default border for a cleaner look */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        
+        .card-body {
+            padding: 1.5rem; /* Adjust padding for better spacing */
+        }
+        
+        .card-title {
+            font-size: 1.25rem; /* Adjust title size for better readability */
+        }
+        
+        .card-text {
+            font-size: 1rem; /* Ensure text is readable */
+        }
+        
+        .btn-primary {
+            font-size: 1rem; /* Adjust button text size */
+            padding: 0.5rem 1.5rem; /* Adjust button padding */
+        }
+        
+        .qw{
+            margin-top: 50px;
+        }
+        
+        /* Media query for tablets and larger devices */
+        @media (min-width: 768px) {
+            .card {
+                margin-bottom: 1.5rem; /* Add margin between cards on medium screens and above */
+            }
+       
+        }
+        
+        /* Media query for smaller devices */
+        @media (max-width: 767px) {
+            .card {
+                margin-bottom: 1rem; /* Add margin between cards on small screens */
+            }
+        }
+        @media (max-width: 768px) {
+            .navbar-brand span {
+             font-size: 0.9rem;
+         }
+        }
+                 /* WhatsApp Icon Styles */
+                 .whatsapp-icon {
+            position: fixed;
+            width: 50px;
+            bottom: 20px; /* Distance from the bottom of the viewport */
+            right: 20px; /* Distance from the right side of the viewport */
+            background-color: #25D366; /* WhatsApp green background */
+            border-radius: 50%;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            z-index: 9999; /* Ensure it stays on top of other elements */
+            transition: background-color 0.3s ease;
+        }
+
+        .whatsapp-icon:hover {
+            background-color: #128C7E; /* Darker green on hover */
+        }
+        </style>
+</head>
+<body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <span class="ml-2">APEX FINANCE & TELECALLING COMPANY</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="career.html">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Careers Section -->
+    <section id="careers" class="careers-section py-5 bg-light">
+        <div class="container-fluid qw">
+            <h2 class="text-center mb-4">Careers at Apex and Finance</h2>
+            <p class="text-center">We are always looking for talented and dedicated individuals to join our team. If you are passionate about telecalling and customer service, we invite you to explore our career opportunities.</p>
+            
+            <!-- Job Openings -->
+            <div id="job-postings" class="row">
+                <!-- Job postings will be inserted here by JavaScript -->
+            </div>
+
+            <!-- Career Growth -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h3 class="text-center mb-4">Why Work With Us?</h3>
+                    <p>At Apex and Finance, we believe in fostering a positive work environment where employees can thrive and grow. Here’s what you can expect:</p>
+                    <ul>
+                        <li><strong>Career Development:</strong> Opportunities for skill development and career progression.</li>
+                        <li><strong>Dynamic Work Environment:</strong> Work with a team of professionals who are passionate about their roles.</li>
+                        <li><strong>Competitive Salary:</strong> Attractive salary packages and performance-based incentives.</li>
+                        <li><strong>Flexible Working Hours:</strong> Options for flexible working arrangements and part-time roles.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+           <!-- WhatsApp Icon -->
+           <a href="https://wa.me/+919351406809" target="_blank" class="whatsapp-icon">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Apex and Finance Telecalling Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Link to Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+ /* Hero Section Styles */
+ .hero-section {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    background: url('logo2.png') no-repeat center center/cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-section .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.hero-section a.btn {
+    animation: fadeInUp 2.5s ease-in-out;
+}
+
+/* Keyframes for animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Section Styles */
+.section-padding {
+    padding: 5rem 1rem;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.section-title p {
+    font-size: 1.125rem;
+    color: #6c757d;
+}
+
+/* Case Studies Section */
+.case-studies-section {
+    background: #f8f9fa;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.card-body i {
+    color: #007bff;
+}
+
+/* Industry Insights Section */
+.insights-section {
+    background: #e9ecef;
+}
+
+.insight-card {
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.insight-card i {
+    color: #28a745;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    background: #e9ecef;
+    padding: 5rem 1rem;
+}
+
+.testimonial-card {
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.testimonial-card .quote {
+    font-size: 1.5rem;
+    color: #343a40;
+}
+
+.testimonial-card .author {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+.footer {
+    background: #343a40;
+    color: #fff;
+    padding: 2rem 1rem;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .navbar-brand span {
+        font-size: 0.9rem;
+    }
+
+    .hero-section {
+        height: 50vh;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero-section p {
+        font-size: 0.875rem;
+    }
+
+    .navbar-brand span {
+        font-size: 0.8rem;
+    }
+
+    .hero-section {
+        height: 40vh;
+        background-size: cover;
+    }
+}
+
+.whatsapp-icon {
+    position: fixed;
+    width: 50px;
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right side of the viewport */
+    background-color: #25D366; /* WhatsApp green background */
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    z-index: 9999; /* Ensure it stays on top of other elements */
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .whatsapp-icon {
+        width: 40px; /* Smaller size for smaller screens */
+        bottom: 15px; /* Adjusted distance from the bottom */
+        right: 15px; /* Adjusted distance from the right */
+        font-size: 20px; /* Smaller icon font size */
+        padding: 8px; /* Adjusted padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .whatsapp-icon {
+        width: 35px; /* Even smaller size for very small screens */
+        bottom: 10px; /* Adjusted distance from the bottom */
+        right: 10px; /* Adjusted distance from the right */
+        font-size: 18px; /* Even smaller icon font size */
+        padding: 6px; /* Adjusted padding */
+    }
+}
